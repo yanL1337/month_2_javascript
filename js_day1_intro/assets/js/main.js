@@ -193,3 +193,8 @@ let vorName = "yan";
 let nachName = "keita";
 
 document.write("vor: " + vorName + "</br>", "nach: " + nachName);
+
+if (Kosten > 8) {
+  console.log("mach was");
+} else {
+}
