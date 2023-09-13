@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- - Lvl1_1 -->
+
+    <div class="aufgabe1">
+      <form action="submit">
+        <input type="number" id="zahl" />
+        <button onclick="double(); return false" type="submit">
+          Verdoppel mich
+        </button>
+      </form>
+      <p id="result1"></p>
+    </div>
+
+    <!-- - Aufgabe1_2 -->
+
+    <div class="aufgabe2">
+      <form action="submit">
+        <input type="date" id="datum" />
+        <button onclick="getBirth(); return false" type="submit">
+          Berechne mein Alter
+        </button>
+      </form>
+      <p id="result2"></p>
+    </div>
+
+    <!-- - Aufgabe1_3 -->
+
+    <div class="aufgabe3">
+      <form action="submit">
+        <label for="alter1">Alter1</label>
+        <input type="number" id="alter1" /><br />
+        <label for="alter2">Alter2</label>
+        <input type="number" id="alter2" />
+        <button onclick="getAgeDiff(); return false" type="submit">
+          Differenz Alter
+        </button>
+      </form>
+      <p id="result3"></p>
+    </div>
+
+    <!-- - Aufgabe1_4 COUNTER -->
+
+    <div class="linear">
+      <h1>Counter</h1>
+      <div id="zahlen">0</div>
+
+      <button onclick="addOne()">+1</button>
+      <button onclick="minusOne()">-1</button><br />
+      <button onclick="plusTen()">+10</button>
+      <button onclick="minusTen()">-10</button><br />
+      <button onclick="plusHun()">+100</button>
+      <button onclick="minusHun()">-100</button><br />
+      <button onclick="reset()">Reset</button>
+      <button onclick="malTwo()">*2</button><br />
+    </div>
+
+    <!-- - Aufgabe1_5 FARBE Ändern -->
+
+    <div class="changer">
+      <input id="farbe" type="text" />
+      <h2>Give me a color</h2>
+      <button onclick="changeColor()">Farbe ändern</button>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
