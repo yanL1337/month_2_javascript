@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- - Lvl1_1 -->
@@ -69,6 +70,45 @@
       <button onclick="changeColor()">Farbe ändern</button>
     </div>
 
+    <!-- - Aufgabe2_1 Headline farbe -->
+
+    <h2 id="heading">Hier ist Headline</h2>
+    <button onclick="changeHead()" id="changeHead">change Headline</button>
+    <button onclick="resetHead()" id="resetHead">reset Headline</button>
+
+    <!-- - Aufgabe3_3 background farbe -->
+
+    <form action="submit">
+      <label for="green">Green</label>
+      <input
+        type="range"
+        onchange="changeBackground()"
+        step="10"
+        min="0"
+        max="255"
+        id="green"
+      />
+
+      <label for="red">Red</label>
+      <input
+        type="range"
+        onchange="changeBackground()"
+        step="10"
+        min="0"
+        max="255"
+        id="red"
+      />
+
+      <label for="blue">Blue</label>
+      <input
+        type="range"
+        onchange="changeBackground()"
+        step="10"
+        min="0"
+        max="255"
+        id="blue"
+      />
+    </form>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -71,3 +71,30 @@ function changeColor() {
 
   document.body.style.backgroundColor = wunsch;
 }
+
+function changeHead() {
+  const hzwei = document.querySelector("#heading");
+  hzwei.classList.add("red");
+}
+function resetHead() {
+  const hzwei = document.querySelector("#heading");
+  hzwei.classList.remove("red");
+}
+
+function valueToHex(c) {
+  var hex = c.toString(16);
+
+  return hex;
+}
+
+function rgbToHex(r, g, b) {
+  return "#" + valueToHex(r) + valueToHex(g) + valueToHex(b);
+}
+
+function changeBackground() {
+  const green = Number(document.querySelector("#green").value);
+  const red = Number(document.querySelector("#red").value);
+  const blue = Number(document.querySelector("#blue").value);
+
+  document.body.style.backgroundColor = rgbToHex(red, green, blue);
+}
