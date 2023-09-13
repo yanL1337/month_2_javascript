@@ -109,3 +109,16 @@ function changeBackground() {
 
   document.body.style.backgroundColor = rgbToHex(red, green, blue);
 }
+
+// ! ZUSATZ STOFF NICHT BEACHTEN
+
+function show() {
+  document.querySelector(".wyld").classList.toggle("zeig");
+}
+
+function activate() {
+  document.querySelector("h3").classList.toggle("anime");
+  document.querySelector("img").classList.toggle("anime2");
+  document.querySelector("img:nth-of-type(2)").classList.toggle("anime2");
+  document.querySelector("body").classList.toggle("bodyMaker");
+}
