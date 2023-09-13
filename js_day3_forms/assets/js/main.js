@@ -4,6 +4,8 @@ function double() {
   document.querySelector("#result1").innerHTML = num * 2;
 }
 
+// - Aufgabe1_2
+
 function getBirth() {
   const datum = new Date(document.querySelector("#datum").value);
   let aktDatum = Date.now();
@@ -13,6 +15,7 @@ function getBirth() {
 
   document.querySelector("#result2").innerHTML = "Du bist: " + age;
 }
+// - Aufgabe1_3
 
 function getAgeDiff() {
   const age1 = Number(document.querySelector("#alter1").value);
@@ -21,6 +24,8 @@ function getAgeDiff() {
   document.querySelector("#result3").innerHTML =
     "Die differzen lautet: " + (age1 - age2);
 }
+
+// - Aufgabe1_4
 
 function addOne() {
   let count = Number(document.querySelector("#zahlen").innerHTML);
@@ -66,11 +71,15 @@ function malTwo() {
   document.querySelector("#zahlen").innerHTML = count * 2;
 }
 
+// - Aufgabe1_5
+
 function changeColor() {
   const wunsch = document.querySelector("#farbe").value;
 
   document.body.style.backgroundColor = wunsch;
 }
+
+// - Aufgabe2_1
 
 function changeHead() {
   const hzwei = document.querySelector("#heading");
@@ -80,6 +89,8 @@ function resetHead() {
   const hzwei = document.querySelector("#heading");
   hzwei.classList.remove("red");
 }
+
+// - Aufgabe3_3
 
 function valueToHex(c) {
   var hex = c.toString(16);
