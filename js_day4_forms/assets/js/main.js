@@ -1,3 +1,5 @@
+// - Aufgabe 1_1
+
 function adult() {
   const age = Number(document.querySelector("#alter").value);
   const result = document.querySelector("#result1");
@@ -8,6 +10,8 @@ function adult() {
   }
 }
 
+// - Aufgabe 1_3
+
 function greaterThan() {
   if (Number(document.getElementById("input").value) >= 18) {
     document.getElementById("result2").innerHTML = "ja kannst rauchen";
@@ -15,6 +19,8 @@ function greaterThan() {
     document.getElementById("result2").innerHTML = "no smoke 4 u";
   }
 }
+
+// - Aufgabe 2_3
 
 function diff() {
   const zahlInput = Number(document.querySelector("#differ").value);
@@ -24,6 +30,8 @@ function diff() {
     console.log((zahlInput - zahl) * 2);
   }
 }
+
+// - Aufgabe 2_2
 
 function health() {
   const air = Number(document.querySelector("#quality").value);
