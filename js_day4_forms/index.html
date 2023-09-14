@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <form onsubmit="adult(); return false">
+      <label for="alter">Age: </label>
+      <input type="text" id="alter" />
+      <button type="submit">Überprüfung</button>
+      <p id="result1"></p>
+    </form>
+
+    <h1 style="color: rgb(0, 119, 255)">JavaScript : if else statement</h1>
+    <h3>
+      Hier prüfen wir, ob das Alter größer als 18 ist oder nicht. Shisha rauchen
+      darf man nur, wenn man volljährig ist.
+    </h3>
+    <hr />
+    <form name="form1" action="#">
+      Geben Sie Ihr Alter ein<input type="text" name="text1" id="input" />
+      <input type="button" value="Alter" onclick="greaterThan()" />
+      <p id="result2"></p>
+    </form>
+
+    <input type="text" id="differ" />
+    <button type="submit" onclick="diff()">check diff</button>
+    <p id="result3"></p>
+
+    <input
+      type="range"
+      step="25"
+      onchange="health()"
+      min="0"
+      max="150"
+      id="quality"
+    />
+    <p id="concern"></p>
+    <p id="effect"></p>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
