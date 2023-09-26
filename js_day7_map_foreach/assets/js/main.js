@@ -58,6 +58,8 @@ let getraenke = [
   "Fanta",
 ];
 
+//ergibt keinen sinn warum function drum herum aber hab ich so verstanden
+
 const myDrinks = (arr) => {
   arr.sort();
 
@@ -97,9 +99,9 @@ let checkNumber = [
   74, 97, 28, 99, 91, 27, 73, 12, 92, 6, 27, 71, 26, 15, 78,
 ];
 console.log("---------------------------------------------------------------");
-checkNumber.forEach((elt) =>
-  elt % 3 === 0 ? console.log(elt + 100) : console.log(elt)
-);
+let newe = checkNumber.map((elt) => (elt % 3 === 0 ? (elt = elt + 100) : elt));
+console.log(checkNumber);
+console.log(newe);
 
 // # Array Iteration leve 1_6
 
@@ -118,3 +120,11 @@ let clean = album.map((elt) =>
 );
 
 console.log(clean);
+
+let n = 42145;
+
+let arrey = n.toString().split("");
+
+arrey.sort((a, b) => Number(b) - Number(a));
+
+Number(arrey.join(""));
