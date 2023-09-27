@@ -98,11 +98,7 @@ const generate2 = () => {
     if (os % 2 === 0 && os != 2) {
       arrey.push("o");
     } else {
-      if (i % 2 == 0) {
-        arrey.push("o");
-      } else {
-        arrey.push("0");
-      }
+      i % 2 === 0 ? arrey.push("o") : arrey.push("0");
     }
   }
   arrey.push("p");
