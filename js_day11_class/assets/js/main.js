@@ -25,7 +25,7 @@ let person2 = {
                 Famlilienstand: ${this.familienstand}`;
   },
 };
-// document.getElementById("person").innerHTML = person2.profil();
+document.getElementById("person").innerHTML = person2.profil();
 
 //! Level 1_1 Classes Constructor
 
