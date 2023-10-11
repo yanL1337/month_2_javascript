@@ -1,0 +1,27 @@
+body {
+  background-color: #ffad87;
+}
+
+.zeit,
+h1 {
+  background-color: #fa877f;
+  width: fit-content;
+  margin: 5px;
+  color: #dedef0;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+button {
+  background-color: #fa877f;
+  color: #dedef0;
+  padding: 5px;
+  width: 50px;
+  margin: 5px 25px;
+  border-radius: 5px;
+}
+
+h1,
+.result {
+  width: fit-content;
+}
