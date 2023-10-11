@@ -1,3 +1,5 @@
+// ! Bitte nicht nachmachen wer das ließt
+
 let looper;
 
 const startMinCountdown = () => {
